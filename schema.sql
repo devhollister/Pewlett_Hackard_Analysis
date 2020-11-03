@@ -37,7 +37,7 @@ CREATE TABLE salaries (
 
 create table titles (
 	emp_no INT NOT NULL, 
-	title INT NOT NULL, 
+	title VARCHAR NOT NULL, 
 	from_date DATE NOT NULL, 
 	to_date DATE NOT NULL, 
 	PRIMARY KEY (emp_no, title, from_date),
@@ -55,6 +55,28 @@ CREATE TABLE dept_emp (
 );
 
 select * from departments, salaries, titles, dept_emp, dept_manager, employees;
+
+SELECT first_name, last_name
+FROM employees
+WHERE birth_date BETWEEN '1952-01-01' AND '1955-12-31';
+
+SELECT first_name, last_name
+FROM employees
+WHERE birth_date BETWEEN '1952-01-01' AND '1952-12-31';
+
+SELECT first_name, last_name
+FROM employees
+WHERE birth_date BETWEEN '1953-01-01' AND '1953-12-31';
+
+SELECT first_name, last_name
+FROM employees
+WHERE birth_date BETWEEN '1954-01-01' AND '1954-12-31';
+
+SELECT first_name, last_name
+FROM employees
+WHERE birth_date BETWEEN '1955-01-01' AND '1955-12-31';
+
+
 
 
 	
