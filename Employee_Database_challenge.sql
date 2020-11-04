@@ -49,3 +49,40 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 	 AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no ASC 
 
+--Total Retiring Postions
+SELECT COUNT(ut.emp_no)
+FROM unique_titles as ut;
+
+--Total Eligible Mentors
+SELECT COUNT(me.emp_no)
+FROM mentorship_eligibility as me
+
+--Expanded Mentorship Eligibility
+SELECT DISTINCT ON (e.emp_no)
+	e.emp_no, 
+	e.first_name,
+	e.last_name,
+	e.birth_date,
+	de.from_date,
+	de.to_date,
+	tt.title
+INTO expanded_mentorship_eligibility
+FROM employees as e 
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles as tt
+ON (e.emp_no = tt.emp_no)
+WHERE (e.birth_date BETWEEN '1956-01-01' AND '1965-12-31')
+	 AND (de.to_date = '9999-01-01')
+ORDER BY e.emp_no ASC 
+
+--Expanded Mentorship Total
+SELECT COUNT(emp_no) 
+FROM expanded_mentorship_eligibility;
+
+--Expanded Mentorship by Title
+SELECT COUNT(em.title), em.title
+INTO expanded_mentorship_titles
+FROM expanded_mentorship_eligibility as em
+GROUP BY em.title
+ORDER BY COUNT(em.title) DESC;
