@@ -16,18 +16,22 @@ To determine the number and type of positions opening up due to retirement, job 
 
 A breakdown of opening positions by title are shown in the chart below.
 
+
 ![](retiring_counts_by_title.png)  
+
 
 ### Mentorship Eligibility
 
-To determine the number of employees eligible to serve as mentors, job titles and other data was retrieved for employees born between January 1, 1965 and December 31, 1965. The results are as follows:
+To determine the number of employees eligible to serve as mentors, job titles and other data were retrieved for employees born between January 1, 1965 and December 31, 1965. The results are as follows:
    * 1,549 employees are eligible to be mentors
 
 ## Summary: 
 
 Based on the above parameters, an expected 90,398 positions will have to be filled while only 1,549 employees are eligible to become mentors. This problem is even more clear when eligible mentors are analyzed by title:
 
+
 ![](mentorship_titles.png)
+
 
 As shown above, even within this woefully inadequate employee subgroup, there is a proportionate lack of senior engineers, the title with the most retiring employees. 
 
@@ -35,7 +39,9 @@ As shown above, even within this woefully inadequate employee subgroup, there is
 
 One way to bridge the gap between the number of open positions due to retirement and available mentors is to expand the eligibility of mentors. By expanding eligibility to employees born between 1956 (employees just before retirement age) and December 31, 1965, the number of possible mentors increases from 1,549 to 167,666. When counted by title, it can be seen that every title has enough possible mentors to match the number of employees lost to retirement. 
 
+
 ![](expanded_mentorship_titles.png)
+
 
 As shown above, by using these parameters for mentorship eligibility there are more than enough employees that can serve as mentors, and in fact this number can be further refined by continuing to alter the qualifying age limit for mentorship. The SQL queries used to provide this additional analysis are provided below: 
 ```
