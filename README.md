@@ -1,6 +1,6 @@
 # Pewlett Hackard Analysis
 
-## Overview
+## Overview:
 
 The following is an analysis of Pewlett Hackard employee data that attempts to address concerns over the eminent retirement of a large portion of the workforce. The first part of the analysis seeks to answer how many employees are likely to retire soon and what titles those employees hold. The second part of the analysis seeks to determine how many employees would be eligible to be mentors in a program aimed at using retirement-ready employees to train younger employees to fill positions left by retiring employees. 
 
