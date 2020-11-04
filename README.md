@@ -9,11 +9,10 @@ The following is an analysis of Pewlett Hackard employee data that attempts to a
 ### Retiring Employees by Title 
 
 To determine the number and type of positions opening up due to retirement, job titles and other data were retrieved for employees born between January 1, 1952 and December 31, 1955. To determine the number of employees eligible to serve as mentors, job titles and other data was retrieved for employees born between January 1, 1965 and December 31, 1965. The results are as follows:
-
-    * 90,398 positions will be opening due to retirement
-    * The title with the most people retiring is Senior Engineer (29,414) with Senior Staff in second (28,254)
-    * Three titles containing the word "Engineer" appeared in the search: Senior Engineer, Engineer, Assistant Engineer
-    * Only two employees with the title of "Manager" are expected to retire
+   * 90,398 positions will be opening due to retirement
+   * The title with the most people retiring is Senior Engineer (29,414) with Senior Staff in second (28,254)
+   * Three titles containing the word "Engineer" appeared in the search: Senior Engineer, Engineer, Assistant Engineer
+   * Only two employees with the title of "Manager" are expected to retire
 
 A breakdown of opening positions by title are shown in the chart below.
 
@@ -22,7 +21,7 @@ A breakdown of opening positions by title are shown in the chart below.
 ### Mentorship Eligibility
 
 To determine the number of employees eligible to serve as mentors, job titles and other data was retrieved for employees born between January 1, 1965 and December 31, 1965. The results are as follows:
-    * 1,549 employees are eligible to be mentors
+   * 1,549 employees are eligible to be mentors
 
 ## Summary: 
 
